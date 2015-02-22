@@ -51,7 +51,7 @@
 - ```loop()``` - runs continuously after the ```setup()``` has completed
 - ```pinMode()``` - configures the digital pins on the Arduino board to be either inputs or outputs
 - ```analogRead()``` - checks the voltage level on an analog input, e.g., A0-A5
-- ```analogWrite()``` - 
+- ```analogWrite()``` - sends PVM voltage to a digital output pin and expects 2 arguments: to which pin to send the info, and a value betwen 0-255, which represents the *duty value.*
 - ```digitalRead()``` - checks the voltage level on a digital input
 - ```digitalWrite()``` - sends voltage info to a pin, and expects 2 arguments: to which pin to send the info, and the value to set the pin, e.g., ```HIGH``` or ```LOW```
 - ```delay()``` - stops the Arduino from exceuting anything for a period of time, argument is in milliseconds
