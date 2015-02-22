@@ -19,6 +19,7 @@
 - **Resister** - component that resists the flow of energy by converting some of the energy to heat.
 - **Switch** - component that interrupts the flow of energy, such as a pushbutton
 - **Datasheet** - manuals for electrical components
+- **Servo Motor** - special type of moter that doesn't spin, but moves to a specific position and stays there. Servo Motors epect a number of pulses that tell them to which angle to move between 1000-2000 microseconds
 
 #### Electrical circuits
 
