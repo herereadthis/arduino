@@ -1,8 +1,15 @@
 # arduino
 
+### Board
+
+#### Pins
+
+- **Pins A0-A5** - analog pins that report back a value between 0-1023, which maps to a range from 0-5 volts
+- **Pins 3, 5, 6, 10, and 11** pins set aside for PVM - note the ```~``` symbol on the board
+
+========
 
 ### definitions
-
 
 #### Components
 
@@ -23,10 +30,6 @@
 - **Series** - components in series come one after the other
 - **Ohm's Law** - V = I*R, I = V/R, R = V/I
 
-#### Board
-
-- **Pins A0-A5** - analog pins that report back a value between 0-1023, which maps to a range from 0-5 volts
-
 #### Programming
 
 - **Argument** - information that you pass to functions, goes inside the parenthesis
@@ -35,16 +38,25 @@
   - *float* - floating point number, use for numbers that can be expressed with decimals
 - **Constants** - similar to variables, but they cannot change.
 - **ADC** - Analog to Digital Converter
+- **PVM** - Pulse Width Modulation, a way to simulate an analog output when using a digital device, involves turning a pin on and off at a very rapid rate from ```HIGH``` to ```LOW```
+  - *duty cycle* - percentage of time a pin is ```HIGH``` in a period. If a pin is ```HIGH``` for half the time in a period and ```LOW``` for the other half, the *duty cycle* is 50%.
 
-##### Functions
-- ```setup()``` runs once when the Arduino is first powered on
-- ```loop()``` runs continuously after the ```setup()``` has completed
-- ```pinMode()``` configures the digital pins on the Arduino board to be either inputs or outputs
-- ```analogRead()``` checks the voltage level on an analog input, e.g., A0-A5
-- ```digitalRead()``` checks the voltage level on a digital input
-- ```digitalWrite()``` sends voltage info to a pin, and expects 2 arguments: to which pin to send the info, and the value to set the pin, e.g., ```HIGH``` or ```LOW```
-- ```delay()``` stops the Arduino from exceuting anything for a period of time, argument is in milliseconds
+========
 
-##### Methods
-- ```Serial.begin()``` opens up a connection between the Arduino and the computer, argument is the the speed at which the arduino will communicate
-- ```Serial.print()``` sends information from the Arduino to a connected computer
+### Coding
+
+#### Functions
+
+- ```setup()``` - runs once when the Arduino is first powered on
+- ```loop()``` - runs continuously after the ```setup()``` has completed
+- ```pinMode()``` - configures the digital pins on the Arduino board to be either inputs or outputs
+- ```analogRead()``` - checks the voltage level on an analog input, e.g., A0-A5
+- ```analogWrite()``` - 
+- ```digitalRead()``` - checks the voltage level on a digital input
+- ```digitalWrite()``` - sends voltage info to a pin, and expects 2 arguments: to which pin to send the info, and the value to set the pin, e.g., ```HIGH``` or ```LOW```
+- ```delay()``` - stops the Arduino from exceuting anything for a period of time, argument is in milliseconds
+
+#### Methods
+- ```Serial.begin()``` - opens up a connection between the Arduino and the computer, argument is the the speed at which the arduino will communicate
+- ```Serial.print()``` - sends information from the Arduino to a connected computer
+- ```Serial.println()``` - similar to ```Serial.print()``` but makes a new line

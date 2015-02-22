@@ -10,7 +10,7 @@ const float increment = 1;
 
 // setup() runs once when the Arduino is first powered on
 void setup() {
-    // Serial.begin() comman opens up a connection between the Arduino and the
+    // Serial.begin() command opens up a connection between the Arduino and the
     // computer
     // the argument 9600 means 9600 bits per second
     // use the Arduino IDE's serial monitor to view the info you choose to send
