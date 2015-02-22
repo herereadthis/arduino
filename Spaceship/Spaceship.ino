@@ -1,5 +1,5 @@
 // variable switchState gives the state of the switch
-// Variables need a data type to be declared. switchStat is an integer (int)
+// Variables need a data type to be declared. switchState is an integer (int)
 int switchState = 0;
 
 // setup() runs once when the Arduino is first powered on
