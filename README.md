@@ -20,6 +20,7 @@
 - **Switch** - component that interrupts the flow of energy, such as a pushbutton
 - **Datasheet** - manuals for electrical components
 - **Servo Motor** - special type of moter that doesn't spin, but moves to a specific position and stays there. Servo Motors epect a number of pulses that tell them to which angle to move between 1000-2000 microseconds
+- **Theremin** - an instrument that makes sounds based on the movements of a person'as hands around the instrument
 
 #### Electrical circuits
 
@@ -56,6 +57,7 @@
 - ```digitalRead()``` - checks the voltage level on a digital input
 - ```digitalWrite()``` - sends voltage info to a pin, and expects 2 arguments: to which pin to send the info, and the value to set the pin, e.g., ```HIGH``` or ```LOW```
 - ```delay()``` - stops the Arduino from exceuting anything for a period of time, argument is in milliseconds
+- ```map()``` scales the high and low ends of a variable, and accepts 5 arguments: ```(value, lowVal, highVal, lowMap, highMap)```. For example, if the ```value = 10```, ```lowVal = 0```, ```highVal = 100```, ```lowMap = 0```, and ```highMap = 50```, then the result is ```5```.
 
 #### Methods
 - ```Serial.begin()``` - opens up a connection between the Arduino and the computer, argument is the the speed at which the arduino will communicate
