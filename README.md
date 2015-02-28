@@ -52,12 +52,14 @@
 - ```setup()``` - runs once when the Arduino is first powered on
 - ```loop()``` - runs continuously after the ```setup()``` has completed
 - ```pinMode()``` - configures the digital pins on the Arduino board to be either inputs or outputs
-- ```analogRead()``` - checks the voltage level on an analog input, e.g., A0-A5
+- ```analogRead()``` - checks the voltage level on an analog input, e.g., A0-A5. Will return a value between 0-1023.
 - ```analogWrite()``` - sends PVM voltage to a digital output pin and expects 2 arguments: to which pin to send the info, and a value betwen 0-255, which represents the *duty value.*
 - ```digitalRead()``` - checks the voltage level on a digital input
 - ```digitalWrite()``` - sends voltage info to a pin, and expects 2 arguments: to which pin to send the info, and the value to set the pin, e.g., ```HIGH``` or ```LOW```
 - ```delay()``` - stops the Arduino from exceuting anything for a period of time, argument is in milliseconds
 - ```map()``` scales the high and low ends of a variable, and accepts 5 arguments: ```(value, lowVal, highVal, lowMap, highMap)```. For example, if the ```value = 10```, ```lowVal = 0```, ```highVal = 100```, ```lowMap = 0```, and ```highMap = 50```, then the result is ```5```.
+- ```millis()``` - checks the amount of time the Arduino has been running since it was last turned on or reset.
+- ```tone()``` - plays a sound, takes 3 arguments: pin output, pitch, and sound duration
 
 #### Methods
 - ```Serial.begin()``` - opens up a connection between the Arduino and the computer, argument is the the speed at which the arduino will communicate
